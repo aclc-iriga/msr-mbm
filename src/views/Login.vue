@@ -117,6 +117,9 @@
 
 
 <style scoped>
+    div.v-card-title {
+        padding: 8px 0 !important;
+    }
     .background-image {
         height: 100vh;
         background-image: url("/bg-img-2.jpg");

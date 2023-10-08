@@ -13,7 +13,6 @@
         <h-menu v-if="$vuetify.display.lgAndUp"/>
 
 		<template v-if="$store.getters['auth/getUser'] !== null">
-            <v-spacer/>
 
             <!-- help button -->
             <v-btn
@@ -24,7 +23,7 @@
                 :color="askingForHelp ? 'warning' : 'grey'"
                 :disabled="helpDisabled"
                 @click="toggleHelp"
-                width="165"
+                icon
             >
                 <template v-if="askingForHelp">
                     <v-progress-circular
@@ -32,12 +31,22 @@
                         color="warning"
                         size="16"
                         width="2"
-                        class="mr-2"
                     />
-                    <template v-if="$vuetify.display.lgAndUp">Asking for </template>Help
+                    <template v-if="$vuetify.display.lgAndUp">
+                        <v-tooltip
+                            activator="parent"
+                            location="bottom"
+                        >Asking for Help</v-tooltip>
+                    </template>
                 </template>
                 <template v-else>
-                    <template v-if="$vuetify.display.lgAndUp">Ask for </template>Help
+                    <template v-if="$vuetify.display.lgAndUp">
+                        <v-icon>mdi-help</v-icon>
+                        <v-tooltip
+                            activator="parent"
+                            location="bottom"
+                        >Ask for Help</v-tooltip>
+                    </template>
                 </template>
             </v-btn>
 
@@ -232,6 +241,9 @@
 
 
 <style scoped>
+    button.v-btn {
+        padding: 0 !important;
+    }
     #topnav {
         background: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab, #e8af45);
         background-size: 200% 200%;

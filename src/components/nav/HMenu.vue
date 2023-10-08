@@ -13,9 +13,17 @@
     </v-btn>
     <v-btn variant="tonal" @click="cover" size="small" icon class="ml-3 mr-1" style="font-size: 1rem !important;">
         <v-icon icon="mdi-pause"/>
+        <v-tooltip
+            activator="parent"
+            location="bottom"
+        >Cover</v-tooltip>
     </v-btn>
     <v-btn variant="tonal" @click="refresh" :loading="refreshing" size="small" icon class="ml-1 mr-3" style="font-size: 1rem !important;">
         <v-icon icon="mdi-refresh"/>
+        <v-tooltip
+            activator="parent"
+            location="bottom"
+        >Refresh</v-tooltip>
     </v-btn>
 </template>
 
