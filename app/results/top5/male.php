@@ -1,10 +1,7 @@
 <?php
 
 const EVENT_SLUGS = [
-    'production-1',
-    'swimwear-1',
-    'formal-wear',
-    'preliminary-qa-1'
+    'advocacy-preliminary-qa-mbm'
 ];
 
 require_once 'index.php';

@@ -1,6 +1,6 @@
-# mmsanagustin-iriga
+# msr-mbm
 
-Tabulation System for Mr. and Ms. San Agustin (Iriga City)
+Tabulation System for Ms. San Ramon and Ms. Barakong Magayon (Iriga City)
 
 ---
 ## Development Setup
@@ -14,15 +14,15 @@ Here are the steps to set up the development environment for this project:
 2. Start Apache and MySQL through XAMPP if not already running.
 
 3. Clone or download this repository to your XAMPP **htdocs** folder.
-   The final path should be `path_to/xampp/htdocs/mmsanagustin-iriga`.
+   The final path should be `path_to/xampp/htdocs/msr-mbm`.
 
 4. Copy [**`app/config/database.example.php`**](app/config/database.example.php)
    to **`app/config/database.php`**, then modify the database connection settings in the new file.
 
 5. Inside [phpMyAdmin](http://localhost/phpmyadmin),
-   create a MySQL database named `mmsanagustin-iriga` and import [mmsanagustin-iriga.sql](mmsanagustin-iriga.sql) into it.
+   create a MySQL database named `msr-mbm` and import [msr-mbm.sql](msr-mbm.sql) into it.
 
-6. Open the terminal and navigate to the project directory **mmsanagustin-iriga**.
+6. Open the terminal and navigate to the project directory **msr-mbm**.
 
 7. Execute the following commands to install the required dependencies:
    ```sh
@@ -34,7 +34,7 @@ Here are the steps to set up the development environment for this project:
    npm run dev
    ```
 
-9. Open your web browser and access <http://localhost:5181/mmsanagustin-iriga/> to view the application.
+9. Open your web browser and access <http://localhost:5188/msr-mbm/> to view the application.
 
 
 ---
@@ -49,7 +49,7 @@ Before getting started, ensure that you have [**Composer**](https://getcomposer.
    to **`tests/backend/config/test-database.php`**, then modify the database connection settings in the new file.
 
 2. Inside [phpMyAdmin](http://localhost/phpmyadmin),
-   create a MySQL database named `test-mmsanagustin-iriga` and import [mmsanagustin-iriga.sql](mmsanagustin-iriga.sql) into it.
+   create a MySQL database named `test-msr-mbm` and import [msr-mbm.sql](msr-mbm.sql) into it.
 
 3. Run the following command to install the required dependencies.
    ```shell
@@ -92,15 +92,15 @@ Here's how to compile the project for production deployment:
    npm run build
    ```
 
-2. Access the application by visiting `http://[host_name]/mmsanagustin-iriga`,
+2. Access the application by visiting `http://[host_name]/msr-mbm`,
    where `host_name` is the **IP address** or **host name** of the server in the network.
    For example:
-     - <http://localhost/mmsanagustin-iriga>
-     - <http://192.168.1.99/mmsanagustin-iriga>
+     - <http://localhost/msr-mbm>
+     - <http://192.168.1.99/msr-mbm>
 
 
 #### Admin Dashboard
-Access the **admin dashboard** at <http://localhost/mmsanagustin-iriga/app>.
+Access the **admin dashboard** at <http://localhost/msr-mbm/app>.
 The default ***username*** and ***password*** is `admin`.
 
 #### Printing Results
